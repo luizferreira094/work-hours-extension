@@ -5,11 +5,7 @@ document.getElementById('calculate-button').addEventListener('click', () => {
       const additionalTextElement = document.getElementById('additional-text');
       const leavingHourTextElement = document.getElementById('leaving-hours');
 
-      resultElement.style.fontWeight = 'bold';  // Define o texto como negrito
-      additionalTextElement.style.fontWeight = 'bold'
-      leavingHourTextElement.style.fontWeight = 'bold'
       additionalTextElement.innerText = ''
-      leavingHourTextElement.style.color = 'blue'
       leavingHourTextElement.innerText = `Horário de Saída: ${response.leavingHours} horas ${response.leavingMinutes} minutos`;
 
       if (response && response.hours !== null && response.minutes !== null && response.seconds !== null) {
