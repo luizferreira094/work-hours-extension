@@ -19,11 +19,11 @@ document.getElementById('calculate-button').addEventListener('click', () => {
         if (response.hours <= 9) {
           resultElement.style.color = 'red';
           additionalTextElement.style.color = 'red';
-          additionalTextElement.innerText = 'Keep Working !';
+          additionalTextElement.innerText = 'Keep Working...';
         } else {
           resultElement.style.color = 'green';
           additionalTextElement.style.color = 'green';
-          additionalTextElement.innerText = 'Ihuuuuu!!! partiu! :) ';
+          additionalTextElement.innerText = 'Ihuuuuu, partiu!! :) ';
         }
       } else {
         resultElement.innerText = 'Não foi possível calcular a diferença.';

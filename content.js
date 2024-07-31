@@ -1,3 +1,6 @@
+const WORK_HOUR = 9
+const WORK_MINUTES = 48
+
 function extractTimes() {
   const timeElements = document.querySelectorAll('.MuiTypography-body1');
   if (timeElements.length < 1) return null;  // Agora precisamos de pelo menos 1 horário
@@ -32,8 +35,8 @@ function calculateTimeDifference(times) {
   const diffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
 
   const newDate = new Date();
-  newDate.setHours(startTime.getHours() + 9)
-  newDate.setMinutes(startTime.getMinutes() + 48);
+  newDate.setHours(startTime.getHours() + WORK_HOUR)
+  newDate.setMinutes(startTime.getMinutes() + WORK_MINUTES);
   const diffLeavingHours = newDate.getHours();
   const diffLeavingMinutes = newDate.getMinutes();
 
